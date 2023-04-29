@@ -67,15 +67,15 @@ cliente_1 = Cliente(12, 'Roberto', 4756988, 100)
 trabajador_1 = Trabajador(30, 'Ricardo', 3015764656, 300)
 
 print("Información del cliente: ")
-print(f"Edad:     {cliente_1.getEdad()} \n"
-    f"Nombre:   {cliente_1.getNombre()} \n" 
-    f"Telefono: {cliente_1.getTelefono()} \n"
-    f"Credito:  {cliente_1.getCredito()}  \n")
+print(f"Edad:     {cliente_1.getEdad()}\n"
+    f"Nombre:   {cliente_1.getNombre()}\n" 
+    f"Telefono: {cliente_1.getTelefono()}\n"
+    f"Credito:  {cliente_1.getCredito()}\n")
 
 print("--------------------------- \n")
 print("Información del trabajador: ")
-print(f"Edad:     {trabajador_1.getEdad()} \n"
-    f"Nombre:   {trabajador_1.getNombre()} \n" 
-    f"Telefono: {trabajador_1.getTelefono()} \n"
-    f"Salario:  {trabajador_1.getSalario()}  \n")
+print(f"Edad:     {trabajador_1.getEdad()}\n"
+    f"Nombre:   {trabajador_1.getNombre()}\n" 
+    f"Telefono: {trabajador_1.getTelefono()}\n"
+    f"Salario:  {trabajador_1.getSalario()} \n")
 
