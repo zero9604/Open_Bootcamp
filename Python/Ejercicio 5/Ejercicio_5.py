@@ -11,6 +11,6 @@ def biciesto(año):
 
     return "Año no biciesto (365 días)"
     
-print(biciesto(1992))
-print(biciesto(2000))
-print(biciesto(1900))
+a = int(input("Por favor ingrese un año: \n"))
+print(biciesto(a))
+
