@@ -8,7 +8,6 @@ def biciesto(año):
         return "Año biciesto (366 días)"
     return "Año no biciesto (365 días)"
     
-for i in range(1,11):
-    a = int(input("Por favor ingrese un año: \n"))
-    print(biciesto(a))
+a = int(input("Por favor ingrese un año: \n"))
+print(biciesto(a))
 
