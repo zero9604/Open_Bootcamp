@@ -25,6 +25,21 @@ class vehiculo:
         self.puertas = puertas
     
 
+class coche(vehiculo):
+    velocidad = 0
+    cilindrada = 0
+
+    def __init__(self, velocidad, cilindrada):
+        super().__init__()
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
+
+
+carro = vehiculo('rojo',4,4)
+print(carro.color)
+print(carro.ruedas)
+print(carro.puertas)
+
 
 
 
