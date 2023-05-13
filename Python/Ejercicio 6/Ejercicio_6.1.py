@@ -29,16 +29,17 @@ class coche(vehiculo):
     velocidad = 0
     cilindrada = 0
 
-    def __init__(self, velocidad, cilindrada):
-        super().__init__()
+    def __init__(self, color, ruedas, puertas, velocidad, cilindrada):
+        super().__init__(color,ruedas,puertas)
         self.velocidad = velocidad
         self.cilindrada = cilindrada
 
-
-carro = vehiculo('rojo',4,4)
-print(carro.color)
-print(carro.ruedas)
-print(carro.puertas)
+deportivo = coche('negro',4,3,50,125)
+print(deportivo.color)
+print(deportivo.ruedas)
+print(deportivo.puertas)
+print(deportivo.velocidad)
+print(deportivo.cilindrada)
 
 
 
