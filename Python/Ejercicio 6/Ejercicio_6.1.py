@@ -14,7 +14,7 @@ Por último, tendrás que crear un objeto de la clase Coche y mostrarlo por cons
 """
 
 # Creamos la clase padre
-class vehiculo:
+class Vehiculo:
     
     # Inicializamos los atributos
     def __init__(self, color, ruedas, puertas):
@@ -23,7 +23,7 @@ class vehiculo:
         self.puertas = puertas
     
 # Creamos la clase hija
-class coche(vehiculo):
+class Coche(Vehiculo):
 
     # inicializamos los atributos
     def __init__(self, color, ruedas, puertas, velocidad, cilindrada):
@@ -40,9 +40,9 @@ class coche(vehiculo):
 
 #--------------------------------------------Programa principal-----------------------------------------#
 
-# Instanciamos e imprimimos el objeto "deportivo"
-deportivo = coche('negro',4,3,200,125)
-print(deportivo)
+# Instanciamos e imprimimos el objeto "coche"
+coche = Coche('negro',4,3,200,125)
+print(coche)
 
 
 
