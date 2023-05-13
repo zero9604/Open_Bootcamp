@@ -2,32 +2,38 @@
 como atributos su nombre y su nota. Deberéis de definir los métodos para inicializar sus atributos, 
 imprimirlos y mostrar un mensaje con el resultado de la nota y si ha aprobado o no."""
 
-# Creamos la clase almuno
-class alumno:
+# Creamos la clase Almuno
+class Alumno:
 
-    def __init__(self, _nombre, _nota):
+    # Metódo para inicializar los atributos 
+    def inicializar(self, _nombre, _nota):
         self._nombre = _nombre
         self._nota = _nota
     
-    def setNombre(self , _nombre):
-        self._nombre = _nombre
+    def imprimir(self):
+        print("Nombre:", self._nombre)
+        print("Nota:", self._nota)
 
-    def getNombre(self):
-        return self._nombre
-    
-    def setNota(self , _nota):
-        self._nota = _nota
-
-    def getNota(self):
-        return self._nota
-    
-    def aprobado(self):
-        if self._nota >= 3.0:
-            return "El Alumno aprobo"
+    def resultado(self):
+        if self._nota < 3:
+            print(f"El alumno ha suspendido con una nota de {self._nota}.")
         else:
-            return "El Alumno reprobo"
+            print(f"El alumno ha aprobado con una nota de {self._nota}.")
     
+# -------------------------------Programa principal-----------------------------------------------------#
 
-estudiante = alumno("Mateo", 3)
+# Creamos los objetos
+alumno1 = Alumno()
+alumno2 = Alumno()
 
-print(estudiante.aprobado())
+# Inicializamos sus atributos
+alumno1.inicializar("Mateo", 3)
+alumno2.inicializar("Daniela", 2.3)
+
+# Imprimimos los atributos de cada objeto
+alumno1.imprimir()
+alumno2.imprimir()
+
+# Motramos si cada alumno aprueba o reprueba
+alumno1.resultado()
+alumno2.resultado()
