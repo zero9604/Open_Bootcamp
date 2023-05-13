@@ -16,9 +16,9 @@ class Alumno:
 
     def resultado(self):
         if self._nota < 3:
-            print(f"El alumno ha suspendido con una nota de {self._nota}.")
+            print(f"El alumno {self._nombre}, ha suspendido con una nota de {self._nota}.")
         else:
-            print(f"El alumno ha aprobado con una nota de {self._nota}.")
+            print(f"El alumno {self._nombre}, ha aprobado con una nota de {self._nota}.")
     
 # -------------------------------Programa principal-----------------------------------------------------#
 
