@@ -1,3 +1,5 @@
+"""Como importar modulos de otras carpetas
+
 import sys
 import pprint
 pprint.pprint(sys.path)
@@ -18,3 +20,18 @@ def main():
 
 if __name__ == '__main__':
     main()  
+
+"""
+import operaciones
+from operaciones import suma
+
+
+def main():
+
+    mp = operaciones.suma.Multiplicador()
+    print(operaciones.suma.suma(2, 2))
+    print(mp.multiplica(5, 5))
+
+
+if __name__ == '__main__':
+    main() 
