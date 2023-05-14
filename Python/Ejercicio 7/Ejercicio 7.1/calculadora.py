@@ -1,11 +1,11 @@
-def sumar(a, b):
-    return a + b
+def sumar(num1, num2):
+    return num1 + num2
 
-def restar(a, b):
-    return a - b
+def restar(num1, num2):
+    return num1 - num2
 
-def multiplicar(a, b):
-    return a * b
+def multiplicar(num1, num2):
+    return num1 * num2
 
-def dividir(a, b):
-    return a/b
+def dividir(num1, num2):
+    return num1 / num2
